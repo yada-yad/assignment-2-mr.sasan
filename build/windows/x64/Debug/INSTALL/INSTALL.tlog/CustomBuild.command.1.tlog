@@ -1,0 +1,10 @@
+^C:\USERS\PC\DESKTOP\KLARA-SC-MAIN\BUILD\WINDOWS\CMAKEFILES\161F7DA53BE4872398468E70AE1092A6\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
